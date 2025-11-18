@@ -114,7 +114,6 @@ body{
     margin: 10px auto; 
     background-color: #000f1b; 
     padding: 60px;
-    height: 100vh;
     border: 1px rgba(20, 20, 20, 0.7); 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
     color: #f0e6d2; 
@@ -132,12 +131,11 @@ body{
 }
 
 .content-wrapper img{
-    /*max-width: 50%;*/
-    width: 500px;
+    /*max-width: 50%;*/ 
     display: block;
     height: auto;
     display: block;
-    margin: 150px 200px auto;
+    
 }
 
 .content-wrapper p {
@@ -151,13 +149,11 @@ body{
 
 .hero-section{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-
     gap: 100px;
-    
-
+    height: 100vh;
 }
 
 .hero-section img{
@@ -167,6 +163,9 @@ body{
 .text-block{
     max-width: 55%;
     margin-bottom: 0;
+    height: 50vh;
+    display: flex;
+    align-items: center;
 }
 
 .text-block h1{
@@ -197,8 +196,8 @@ body{
 
 .image-hover-container{
     position: relative;
-    width: 850px;
-    height: 850px;
+    width: 550px;
+    height: 550px;
     overflow: hidden;
     cursor: pointer;
 }
@@ -229,14 +228,13 @@ body{
 
     overflow: hidden;
     z-index: 2;
-
     transition: opacity 0.3s ease-in-out;
 }
 
 .reveal-image{
     position: absolute;
-    width: 850px;
-    height: 850px;
+    width: 550px;
+    height: 550px;
     object-fit: cover;
 
     left: 0;
