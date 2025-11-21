@@ -1,53 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Document</title>
 </head>
 <body>
-    <div class="background-container">
-        <header class="main-header" id="smart-header">
-            <a href=""><img src="assets/images/header_logo.png" alt="Jean Charles logo"></a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#projects">Projetos</a>
-                    </li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
+   
+   <div class="page-container">
+      <header class="main-header" id="smart-header">
+         <a href="" class="main-header__logo-link">
+                <img src="assets/images/header_logo.png" alt="Jean Charles logo" class="main-header__logo-img">
+            </a>
+         <nav class="main-nav">
+            <ul class="main-nav__list">
+               <li class="main-nav__item">
+                  <a href="#projects" class="main-nav__link">Projetos</a>
+               </li>
+               <li class="main-nav__item"><a href="#about" class="main-nav__link">Sobre</a></li>
+               <li class="main-nav__item"><a href="#contact" class="main-nav__link">Contato</a></li>
+            </ul>
+         </nav>
+      </header>
 
-        <div class="content-fade-in">
-            <main class="content-wrapper">
-                <div class="hero-section">
-                    
-                    <div class="image-hover-container">
-                        <img class="main-image" src="assets/images/Bully-frame w me 20.png" alt="Foto de Jean Charles">
-                        <div class="reveal-area">
-                            <img class="reveal-image" src="assets/images/Jimmy-frame.png" alt="Foto de Jimmy Hopkins">
-                        </div>
-                    </div>
+      <div class="content-fade-in">
+         <main class="content-wrapper">
+            <section class="hero-section">
+               <div class="image-hover-container">
+                  <img class="image-hover-container__main-image" src="assets/images/Bully-frame w me 20.png" alt="Foto de Jean Charles">
+                  
+                  <div class="reveal-area">
+                     <img class="reveal-area__image" src="assets/images/Jimmy-frame.png" alt="Foto de Jimmy Hopkins">
+                  </div>
+               </div>
+               <div class="text-block">
+                  <div class="text-block__content">
+                     <h1 class="text-block__title">Bem-vindo ao meu Portfólio</h1>
+                     <div class="decorative-sep"></div>
+                     <p class="text-block__subtitle">Explore meus projetos e saiba mais sobre mim.</p>
 
-                    <div class="text-block">
-                        <div>
-                            <h1>Bem-vindo ao meu Portfólio</h1>
-                            <p>Explore meus projetos e saiba mais sobre mim.</p>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </div>
-    </div>
+                     <a href="projects.html" class="cta-button">Ver projetos e experiências</a>
+                  </div>
+               </div>
+            </section>
 
-    <footer>
-        <p>&copy; 2024 Jean Charles. Todos os direitos reservados.</p>
-    </footer>
+            <section id="os-project-section" class="project-section">
+               <div id="spotlight-overlay" class="spotlight-overlay-off"></div>
+               <h1 class="project-title">PROJETOS</h1>
+                  <div class="iframe-interactive-wrapper">  
+                     <iframe id="os-frame" src="projects.html" class="os-frame-minimized" allowfullscreen></iframe>
+                     <div class="iframe-overlay">
+                        <p class="overlay-text">CLIQUE PARA INICIAR</p>
+                     </div>
+               </div>
+            </section>
+               
 
-    <script src="script.js"></script>
+
+            
+            
+            <div class="nadave"></div>
+            <img src="./assets/images/my code.png" alt="" class="code-image" >
+         </main>
+         
+      </div>
+   </div>
+
+   <footer class="main-footer">
+      <p class="main-footer__copy">&copy; 2024 Jean Charles. Todos os direitos reservados.</p>
+   </footer>
+
+   <script src="script.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-projects.css">
+    <title>Projetos - Jean Charles</title>
+</head>
+<body>
+    <div id="boot-screen" class="boot-screen">
+        <p class="boot-text">Aguarde...Iniciando Sistema Operacional de Projetos</p>
+        <p class="boot-text">Microsoft (R) Windows 95</p>
+        <p class="boot-text">C:></p>
+    </div>
+    <div class="desktop-container">
+        <div class="taskbar">
+            
+            <button class="taskbar__start-button">
+                <img class="taskbar__start-logo" src="./assets/images/win95_logo.png" alt="Logo windows 95">
+                <span class="taskbar__start-label">Start</span>
+            </button>
+            <div class="start-menu" id="start-menu">
+                <div class="menu-sidebar">
+                    <span class="sidebar-text">Windows 95</span>
+                </div>
+
+                <ul class="menu-items">
+                    <li class="menu-item">
+                        <a href="">
+                            <img src="" alt="">
+                            Sobre
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">
+                            <img src="" alt="">
+                            Projetos
+                        </a>
+                    </li>
+                    <li class="menu-item menu-shutdown">
+                        <a href="" id="menu-shutdown">
+                            <img src="" alt="">
+                            Shut Down...
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="taskbar__clock" id="live-clock">14:50 PM</div>
+        </div>
+
+        <div class="desktop-icon icon-pos-1" data-project="project-UDF">
+            <img src="assets/images/udf-icon.png" alt="Ícone UDF">
+            <span class="icon__label">UDF</span>
+        </div>
+        
+        <div class="desktop-icon icon-pos-2" data-project="project-1">
+            <img src="" alt="Ícone VR">
+            <span class="icon__label">VR</span>
+        </div>
+
+        <div class="desktop-icon icon-pos-3" data-project="project-2">
+            <img src="" alt="Ícone 7mind">
+            <span class="icon__label">7Mind</span>
+        </div>
+
+        <div class="project-window" id="project-UDF-window">
+            <div class="window-title-bar">
+                <span class="window__title">SentinelaPAY</span>
+                <div class="window-controls">
+                    <button class="control-btn close-btn">X</button>
+                </div>
+            </div>
+
+            <div class="window-content">
+                <h3>Site voltado a gerenciamento da sua carteira. Você controla seus gastos e acompanha suas finanças de forma prática e segura.</h3>
+                <p>Este projeto da matéria de estrutura de dados I foi desenvolvido pelo meu grupo e eu.
+                    Fiquei responsável por gerenciar o deploy do site, além de auxiliar e desenvolver o front-end com meus amigos Nícolas e Victor
+                </p>
+
+                <div class="project-details">
+                    <div class="details-section">
+                        <h4>Função:</h4>
+                        <p>Gerente de deploy | UX/UI Designer e front-end/back-end</p>
+                    </div>
+                    <div class="details-section">
+                        <h4>Tecnologias:</h4>
+                        <p>Django, Python, HTML5, CSS3, Javascript</p>
+                    </div>
+                </div>
+
+                <div class="project-gallery"></div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="script-projects.js"></script></body>
+</html>
